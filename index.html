@@ -2518,12 +2518,23 @@
                 color: #80808069;
                 text-decoration: line-through;
               }
-              .iti.iti--allow-dropdown {
+              .iti.iti--allow-dropdown,
+              .input_data .iti {
                 width: 100%;
                 max-width: 420px;
               }
-              .iti.iti--allow-dropdown input {
+              .iti.iti--allow-dropdown input,
+              .input_data input {
                 width: 100%;
+                max-width: 420px;
+                box-sizing: border-box;
+              }
+              .iti__flag-container {
+                right: auto;
+                left: 0;
+              }
+              .iti__selected-flag {
+                width: 50px;
               }
             </style>
             
@@ -2821,6 +2832,7 @@
       // localizedCountries: { 'de': 'Deutschland' },
       // nationalMode: false,
       // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // onlyCountries: ['bg'],
       // placeholderNumberType: "MOBILE",
       preferredCountries: ['bg'],
       // separateDialCode: true,
